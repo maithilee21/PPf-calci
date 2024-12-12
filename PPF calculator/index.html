@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPF</title>
+    <link rel="stylesheet" href="PPFcalculator.css">
+</head>
+
+<body>
+    <h1>PPF CALCULATOR</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6" style="background-color:rgb(255, 255, 255);">
+                <input type="text" id="x1" placeholder="Amount" /> <br />
+                <input type="text" id="x2" placeholder="roi" /> <br />
+                <input type="text" id="x3" placeholder="duration" /> <br />
+                <button id="btn">Calculate</button>
+                <p></p>
+            </div>
+            <div class="col-sm-6" style="background-color:rgb(255, 255, 255);">
+                <div id="container"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <table border="1" width="800">
+        <thead>
+            <tr>
+                <th>Year</th>
+                <th>Opening Balance</th>
+                <th>Amount</th>
+                <th>Interest</th>
+                <th>Closing Balance</th>
+            </tr>
+        </thead>
+        <tbody id="result"></tbody>
+    </table>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="PPFcalculator.js"></script>
+</body>
+
+</html>
